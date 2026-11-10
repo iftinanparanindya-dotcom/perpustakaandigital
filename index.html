@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -6,60 +7,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Library</title>
 
+    <!-- Elegant Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f5;
+            font-family: 'DM Sans', sans-serif;
+            background: #171414;
             margin: 0;
-            color: #333;
+            color: #eee5dc;
+            line-height: 1.7;
         }
 
         header {
-            background: #245b48;
-            color: white;
+            background: linear-gradient(135deg, #521c2b, #32151d 65%, #211517);
+            color: #f8eee4;
             text-align: center;
-            padding: 35px 20px;
+            padding: 75px 20px 65px;
+            border-bottom: 1px solid #a98a5b;
+            position: relative;
+        }
+
+        header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 58px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            margin: 0;
+            color: #e4c38c;
+        }
+
+        header p {
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #e4d3c0;
+            margin-top: 12px;
         }
 
         .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 12px;
+            max-width: 850px;
+            margin: 55px auto;
+            padding: 45px;
+            background: #211c19;
+            border: 1px solid #493326;
+            border-radius: 5px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
         }
 
         .identitas {
-            background: #edf5f0;
-            padding: 18px;
-            border-radius: 8px;
-            line-height: 2;
+            background: #30241f;
+            padding: 22px 25px;
+            border-left: 3px solid #c5a46d;
+            border-radius: 2px;
+            line-height: 2.2;
+            color: #e8ded2;
+            font-size: 14px;
         }
 
         h2 {
-            color: #245b48;
-            margin-top: 30px;
+            font-family: 'Cormorant Garamond', serif;
+            color: #d5b47a;
+            font-size: 31px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-top: 42px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #493326;
         }
 
         .buku {
             display: block;
             text-decoration: none;
-            color: #245b48;
-            background: #f1f6f3;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 8px;
+            color: #e9ded2;
+            background: #30241f;
+            padding: 16px 21px;
+            margin: 11px 0;
+            border: 1px solid #493326;
+            border-left: 3px solid #a88754;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            transition: all 0.3s ease;
         }
 
         .buku:hover {
-            background: #dcece2;
+            background: #521c2b;
+            color: #f1d6a5;
+            border-color: #a88754;
+            border-left: 3px solid #d5b47a;
+            padding-left: 28px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
         }
 
         footer {
             text-align: center;
-            background: #245b48;
-            color: white;
-            padding: 20px;
+            background: #521c2b;
+            color: #d8c4aa;
+            padding: 25px 20px;
+            border-top: 1px solid #a88754;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 55px 15px 45px;
+            }
+
+            header h1 {
+                font-size: 39px;
+                letter-spacing: 3px;
+            }
+
+            header p {
+                font-size: 10px;
+                letter-spacing: 2px;
+            }
+
+            .container {
+                margin: 25px 15px;
+                padding: 25px 20px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            .buku {
+                font-size: 13px;
+                padding: 14px;
+            }
         }
     </style>
 </head>
@@ -82,16 +169,16 @@
 
     <h2>Daftar Ebook</h2>
 
-    <a class="buku" href="ebook/buku-01.pdf" target="_blank">01. Judul Buku 1</a>
-    <a class="buku" href="ebook/buku-02.pdf" target="_blank">02. Judul Buku 2</a>
-    <a class="buku" href="ebook/buku-03.pdf" target="_blank">03. Judul Buku 3</a>
-    <a class="buku" href="ebook/buku-04.pdf" target="_blank">04. Judul Buku 4</a>
-    <a class="buku" href="ebook/buku-05.pdf" target="_blank">05. Judul Buku 5</a>
-    <a class="buku" href="ebook/buku-06.pdf" target="_blank">06. Judul Buku 6</a>
-    <a class="buku" href="ebook/buku-07.pdf" target="_blank">07. Judul Buku 7</a>
-    <a class="buku" href="ebook/buku-08.pdf" target="_blank">08. Judul Buku 8</a>
-    <a class="buku" href="ebook/buku-09.pdf" target="_blank">09. Judul Buku 9</a>
-    <a class="buku" href="ebook/buku-10.pdf" target="_blank">10. Judul Buku 10</a>
+    <a class="buku" href="ebook/buku-01.pdf" target="_blank">01. Tenggelamnya Kapal Van Der Wijck</a>
+    <a class="buku" href="ebook/buku-02.pdf" target="_blank">02. Percy Jackson & Olympians:The Titan's Curse</a>
+    <a class="buku" href="ebook/buku-03.pdf" target="_blank">03. Beauty & The Beast</a>
+    <a class="buku" href="ebook/buku-04.pdf" target="_blank">04. Di Bawah Lentera Merah</a>
+    <a class="buku" href="ebook/buku-05.pdf" target="_blank">05. Harry Potter dan Batu Bertuah</a>
+    <a class="buku" href="ebook/buku-06.pdf" target="_blank">06. The Legend of King Arthur</a>
+    <a class="buku" href="ebook/buku-07.pdf" target="_blank">07. Laskar Pelangi</a>
+    <a class="buku" href="ebook/buku-08.pdf" target="_blank">08. Laut Bercerita</a>
+    <a class="buku" href="ebook/buku-09.pdf" target="_blank">09. Layla Majnun</a>
+    <a class="buku" href="ebook/buku-10.pdf" target="_blank">10. Matt & Mou</a>
 
     <h2>Materi UGC</h2>
 
